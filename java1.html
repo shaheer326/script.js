@@ -1,0 +1,67 @@
+<html>
+
+    <head>
+    </head>
+
+    <body>
+        
+        <button onclick="myFunction()">try it!</button>
+        <p id="greet"></p>
+        <p id="hour"></p>
+        
+        <p id="number"></p>
+
+        <script>
+
+            var a = 8;
+            var b = 10;
+            var c = 10;
+            var d = null;
+            var e ;//undefined variable
+
+            document.write("a and b are equal : " + (a==b))
+            document.write("<br>")
+            document.write("b and c are equal : " + (b==c))
+            document.write("<br>")
+            document.write("the value of d is : " + d)
+            document.write("<br>")
+            document.write("the value of e is : " + e)
+            document.write("<br>")
+
+            function myFunction() {
+
+                var greeting;    
+                var time = new Date().getHours()
+
+                if (time < 10) {
+                    greeting = "good morning";
+                }
+
+                else if (time < 20) {
+                    greeting = "good day";
+                }
+
+                else {
+                    greeting = "good evening"
+                }
+
+                document.getElementById("hour").innerHTML = "Current Hour is :"
+
+                + time;
+
+                document.getElementById("greet").innerHTML = greeting;
+
+            }
+
+            var text = "";
+            var i = 0;
+            while (i < 10){
+                text += "<br>The number is" + i;
+                i++;
+            }
+
+            document.getElementById("number").innerHTML = text;
+
+        </script>
+    </body>
+</html>

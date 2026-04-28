@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+
+    </head>
+
+
+    <body>
+
+        <button onclick="myfunction()">click me</button>
+
+        <p id="result"></p>
+
+        <script>
+
+            function myfunction(){
+
+                var x = 10
+                var y = 20
+
+                var a = eval("x + y") + "<br>";
+                var b = eval("2 + y") + "<br>";
+                var c = eval("x + 2") + "<br>";
+
+                var res = a + b + c ; // concatenates the string
+
+                document.getElementById("result").innerHTML = res;
+            }
+
+        </script>
+
+    </body>
+
+</html>

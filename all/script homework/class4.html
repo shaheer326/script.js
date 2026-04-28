@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <p id="mythirdpop"></p>
+
+        <script>
+                       
+            document.getElementById("demo").innerHTML = cars[1];
+
+            var fruits = ["toyota","farari","ford","mustang"];
+            document.getElementById("myjoin").innerHTML = fruits.join(" - ");
+            document.getElementById("myfirstpop").innerHTML = fruits;
+            fruits.pop();
+            document.getElementById("mysecondpop").innerHTML = fruits;
+            fruits.pop();
+            document.getElementById("mythirdpop").innerHTML = fruits;
+
+        </script>
+
+        
+
+    </body>
+
+</html>

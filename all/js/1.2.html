@@ -1,0 +1,28 @@
+<html>
+
+    <head>
+
+    </head>
+
+
+    <body>
+
+        <p id="value"></p>
+
+        <script>
+
+            var numbers = [17, 9, 42, 67]
+
+            function myfunction(num){
+                return num + 10;
+            }
+
+            var newarray = numbers.map(myfunction);
+
+            document.getElementById("value").innerHTML = newarray;
+
+        </script>
+
+    </body>
+
+</html>

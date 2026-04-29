@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+
+    </head>
+
+
+    <body>
+
+        <p id="number"></p>
+        <p id="string"></p>
+
+        <p id="error"></p>
+
+        <p id="result"></p>
+
+        <script>
+        
+            var x = 70;
+            var y = 90;
+
+            document.getElementById("number").innerHTML = x + y;
+            document.getElementById("string").innerHTML = String(x) + String(y);
+
+            try {
+                document.write("welcome guest");
+            }
+
+            catch(err) {
+                document.getElementById("error").innerHTML = err.message;
+            }
+
+            const add = (a,b) => (a + b);
+
+            document.getElementById("result").innerHTML = add(4,6);
+
+        </script>
+
+    </body>
+
+</html>

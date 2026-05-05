@@ -1,0 +1,69 @@
+<html>
+
+    <head>
+
+    </head>
+
+
+    <body>
+
+        <p id="result"></p>
+
+        <p id="result2"></p>
+
+        <p id="result3"></p>
+
+        <p id="result4"></p>
+
+        <script>
+
+            var myobj = {name: "rika", age: 14, grade: 7}
+
+            var myJSON = JSON.stringify(myobj);
+
+            var newobj = JSON.parse(myJSON);
+
+            document.getElementById("result").innerHTML = newobj.name;
+
+
+            async function add(a, b) {
+                let response = await a + b;
+                display(response)
+            }
+
+            function display(some) {
+                document.getElementById("result2").innerHTML = some;
+            }
+
+            add(33,34);
+
+
+            function mydisplayer(some) {
+                document.getElementById("result3").innerHTML = some;
+            }
+
+            function sum(a,b){
+                var sum = a + b;
+                mydisplayer(sum);
+            }
+
+            let mypromise = new Promise((resolve, reject) => {
+                let x = 0;
+
+                if (x == 0){
+                    resolve("ok")
+                } else{
+                    reject("error")
+                }
+            });
+
+            mypromise.then(
+                function(value){ sum(5,5); },
+                function(error){ sum(error);}
+        );
+
+        </script>
+
+    </body>
+
+</html>

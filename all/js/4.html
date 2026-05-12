@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+
+    </head>
+
+
+    <body>
+
+        <input id="id" type="number" min="10" max="20">
+        
+        <button onclick="myfunction()">OK!</button>
+        
+
+        <p id="result"></p>
+
+        <script>
+
+            function myfunction(){
+                var j =document.getElementById("id")
+
+                if (!j.checkValidity()){
+                    document.getElementById("result").innerHTML = j.validationMessage;
+                } else {
+                    document.getElementById("result").innerHTML = "OK!"
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>

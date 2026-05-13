@@ -1,0 +1,45 @@
+<html>
+    
+    <head>
+
+    </head>
+
+
+    <body>
+
+    <script>
+
+        var choice = prompt("welcome to area calculator. /n.please enter your choice. \n.area of ractangle. \n.area of triangle. \n.area of circle. \n.area of parallelogram");
+
+        if (choice === '1') {
+            var l = prompt('enter the lenght')
+            var b = prompt('enter the breadth')
+            var result = number(l) * number(b)
+            alert('the area is' + result)
+        }
+
+         if (choice === '2') {
+            var h = prompt('enter the height')
+            var b = prompt('enter the base')
+            var result = number(h) * number(b) / 2
+            alert('the area is' + result)
+        }
+
+         if (choice === '3') {
+            var r = prompt('enter the radius')
+            var result = 3.14 *number(r) * number(r)
+            alert('the area is' + result)
+        }
+
+         if (choice === '4') {
+            var h = prompt('enter the height')
+            var cb = prompt('enter the corresponding base')
+            var result = number(h) * number(cb)
+            alert('the area is' + result)
+        }
+
+    </script>
+
+    </body>
+
+</html>
